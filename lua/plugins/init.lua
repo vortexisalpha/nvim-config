@@ -9,5 +9,6 @@ require("plugins.neotree")
 require("plugins.barbar")
 require("plugins.toggleterm")
 require("plugins.lualine")
+require("plugins.noice")
 
 require("mini.pairs").setup()
