@@ -19,3 +19,9 @@ require("toggleterm").setup({
   end,
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "neo-tree",
+  callback = function()
+    vim.opt_local.buflisted = false
+  end,
+})

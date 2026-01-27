@@ -17,8 +17,16 @@ require("neo-tree").setup({
             ["l"] = "open",
             ["h"] = "close_node",
             ["H"] = "navigate_up",
-            ["L"] = "navigate_down"
+            ["L"] = "close_node"
         }
     },
+    event_handlers = {
+        {
+            event = "neo_tree_buffer_enter",
+            handler = function()
+                vim.opt_local.buflisted = false
+            end,
+        },
+  },
 })
 
