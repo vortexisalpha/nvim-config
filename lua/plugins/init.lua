@@ -1,0 +1,8 @@
+require("plugins.packer")
+require("plugins.telescope")
+require("plugins.colour")
+require("plugins.treesitter")
+require("plugins.undotree")
+require("plugins.harpoon")
+require("plugins.fugative")
+require("plugins.neotree")
