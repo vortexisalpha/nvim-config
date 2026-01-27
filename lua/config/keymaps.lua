@@ -1,6 +1,12 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<cr>", { desc = "Neo-tree" })
 
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<C-p>', builtin.git_files, { desc = 'Telescope find files in git repo' })
+vim.keymap.set('n', '<leader>/', builtin.live_grep , {desc = 'Grep'})
+vim.keymap.set("n", "<leader>fw", builtin.grep_string)
+
 vim.keymap.set("n", "gb", "<C-o>",{desc = "Go back"})
 vim.keymap.set("n", "gf", "<C-i>",{desc = "Go forward"})
 

@@ -1,5 +1,6 @@
 require("neo-tree").setup({
     close_if_last_window = true,
+    enable_scrollbar = false,
     filesystem = {
         hijack_netrw_behavior = "open_current",
         filtered_items = {

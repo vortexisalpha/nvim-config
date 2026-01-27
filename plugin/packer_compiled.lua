@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["mini.nvim"] = {
+    loaded = true,
+    path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/mini.nvim",
+    url = "https://github.com/echasnovski/mini.nvim"
+  },
   ["neo-tree.nvim"] = {
     loaded = true,
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/neo-tree.nvim",

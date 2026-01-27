@@ -70,5 +70,11 @@ return require('packer').startup(function(use)
   })
 
 
-    use({ "akinsho/toggleterm.nvim", tag = "*" })
+  use({
+      "akinsho/toggleterm.nvim", tag = "*" 
+  })
+
+  use({
+      "echasnovski/mini.nvim" 
+  })
 end)
