@@ -8,4 +8,6 @@ require("plugins.fugative")
 require("plugins.neotree")
 require("plugins.barbar")
 require("plugins.toggleterm")
+require("plugins.lualine")
+
 require("mini.pairs").setup()

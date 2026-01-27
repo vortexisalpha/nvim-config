@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/mason-lspconfig.nvim",
@@ -114,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
   },
+  ["noice.nvim"] = {
+    loaded = true,
+    path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/nui.nvim",
@@ -128,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-treesitter"] = {
     loaded = true,

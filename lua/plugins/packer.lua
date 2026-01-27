@@ -58,7 +58,6 @@ return require('packer').startup(function(use)
       requires = {
           "nvim-lua/plenary.nvim",
           "MunifTanjim/nui.nvim",
-          "nui.nvim",
           "nvim-tree/nvim-web-devicons" 
       },
   })
@@ -76,5 +75,18 @@ return require('packer').startup(function(use)
 
   use({
       "echasnovski/mini.nvim" 
+  })
+
+  use({
+      "nvim-lualine/lualine.nvim",
+      requires = "nvim-tree/nvim-web-devicons" 
+  })
+
+  use({
+      "folke/noice.nvim",
+      requires = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify" } 
+  })
+  use({
+      "rcarriga/nvim-notify" 
   })
 end)
