@@ -10,5 +10,6 @@ require("plugins.barbar")
 require("plugins.toggleterm")
 require("plugins.lualine")
 require("plugins.noice")
+require("plugins.blankline")
 
 require("mini.pairs").setup()
