@@ -68,4 +68,7 @@ return require('packer').startup(function(use)
   use ({
       "folke/snacks.nvim"
   })
+
+
+    use({ "akinsho/toggleterm.nvim", tag = "*" })
 end)

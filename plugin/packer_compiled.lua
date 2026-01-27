@@ -144,10 +144,20 @@ _G.packer_plugins = {
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["snacks.nvim"] = {
+    loaded = true,
+    path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/snacks.nvim",
+    url = "https://github.com/folke/snacks.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,

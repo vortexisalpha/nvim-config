@@ -34,6 +34,28 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
 -- buffer nav:
 vim.keymap.set("n", "H", "<cmd>bprevious<cr>", { desc = "Previous buffer" })
 vim.keymap.set("n", "L", "<cmd>bnext<cr>", { desc = "Next buffer" })
-vim.keymap.set("n", "<leader>bd", ":bd<CR>", {desc = "Delete buffer"})
+vim.keymap.set("n", "<leader>bd", function()
+  Snacks.bufdelete()
+end, { desc = "Delete buffer" })
+
+local Terminal = require("toggleterm.terminal").Terminal
+
+-- Persistent terminals
+local float_term = Terminal:new({ direction = "float", hidden = true })
+local right_term = Terminal:new({ direction = "vertical", hidden = true })
+local top_term   = Terminal:new({ direction = "horizontal", hidden = true })
+
+vim.keymap.set("n", "<leader>tt", function()
+  float_term:toggle()
+end, { desc = "Toggle floating terminal" })
+
+vim.keymap.set("n", "<leader>tl", function()
+  right_term:toggle()
+end, { desc = "Toggle right terminal" })
+
+vim.keymap.set("n", "<leader>tk", function()
+  top_term:toggle()
+end, { desc = "Toggle top terminal" })
 
 
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })

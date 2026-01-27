@@ -1,6 +1,3 @@
 vim.opt.clipboard = "unnamedplus"
+vim.opt.showtabline = 2
 
-
-options = {
-  always_show_bufferline = false,
-}
