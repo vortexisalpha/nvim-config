@@ -93,4 +93,26 @@ return require('packer').startup(function(use)
   use({
       "lukas-reineke/indent-blankline.nvim" 
   })
+
+  use({
+      "danilamihailov/beacon.nvim" 
+  })
+
+  use({
+      "sphamba/smear-cursor.nvim",
+  })
+
+  use {
+      "goolord/alpha-nvim",
+      requires = { "nvim-tree/nvim-web-devicons" },
+      config = function()
+          require("plugins.alpha_dashboard").setup()
+      end,
+  }
+
+  -- ASCII art collection for dashboard
+  use {
+      "MaximilianLloyd/ascii.nvim",
+      requires = { "MunifTanjim/nui.nvim" },
+  }
 end)

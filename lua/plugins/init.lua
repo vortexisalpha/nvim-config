@@ -12,6 +12,7 @@ require("plugins.lualine")
 require("plugins.noice")
 require("plugins.blankline")
 require("plugins.mini")
+require("plugins.smear_cursor")
 
 require("mini.pairs").setup()
 

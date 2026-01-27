@@ -79,10 +79,26 @@ _G.packer_plugins = {
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["alpha-nvim"] = {
+    config = { "\27LJ\2\nE\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\28plugins.alpha_dashboard\frequire\0" },
+    loaded = true,
+    path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
+  },
+  ["ascii.nvim"] = {
+    loaded = true,
+    path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/ascii.nvim",
+    url = "https://github.com/MaximilianLloyd/ascii.nvim"
+  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
+  },
+  ["beacon.nvim"] = {
+    loaded = true,
+    path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/beacon.nvim",
+    url = "https://github.com/danilamihailov/beacon.nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
@@ -169,6 +185,11 @@ _G.packer_plugins = {
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["smear-cursor.nvim"] = {
+    loaded = true,
+    path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/smear-cursor.nvim",
+    url = "https://github.com/sphamba/smear-cursor.nvim"
+  },
   ["snacks.nvim"] = {
     loaded = true,
     path = "/Users/ffmbp/.local/share/nvim-alt/site/pack/packer/start/snacks.nvim",
@@ -202,6 +223,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\2\nE\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\28plugins.alpha_dashboard\frequire\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
