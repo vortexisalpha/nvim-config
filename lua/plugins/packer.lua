@@ -65,4 +65,7 @@ return require('packer').startup(function(use)
   --buf tabs
   use({ "romgrk/barbar.nvim", requires = "nvim-tree/nvim-web-devicons" })
 
+  use ({
+      "folke/snacks.nvim"
+  })
 end)
