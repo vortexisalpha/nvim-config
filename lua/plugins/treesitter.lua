@@ -1,11 +1,13 @@
-require'nvim-treesitter'.setup {
-  -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
-  install_dir = vim.fn.stdpath('data') .. '/site'
+local ok, configs = pcall(require, 'nvim-treesitter.configs')
+if not ok then
+  return
+end
+
+configs.setup {
+  ensure_installed = { 'cpp', 'c', 'python', 'javascript', 'lua', 'typescript' },
+  sync_install = false,
+  auto_install = true,
+  highlight = {
+    enable = true,
+  },
 }
-
-require'nvim-treesitter'.install { 'cpp', 'c', 'python', 'javascript', 'lua', 'typescript'}
-
-vim.api.nvim_create_autocmd('FileType', {
-  pattern = { '<filetype>' },
-  callback = function() vim.treesitter.start() end,
-})
